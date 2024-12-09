@@ -17,10 +17,11 @@ namespace FavoriteSwapper
         private static BoneLib.BoneMenu.Page _mainCategory;
         private static BoneLib.BoneMenu.Page _presetCategory;
         public static PresetManager _presetManager = new PresetManager();
+        public static Color maincolor = new Color32(255, 222, 145, 255);
         public static void BonemenuSetup()
         {
             _presetManager.OnStart();
-            _mainCategory = BoneLib.BoneMenu.Page.Root.CreatePage("Favorite Swapper", Color.white);
+            _mainCategory = BoneLib.BoneMenu.Page.Root.CreatePage("Favorite Swapper", maincolor);
             var hotloadButton = _mainCategory.CreateFunction("Reload Presets from File", Color.yellow, () => { _presetManager.LoadPresets(); RebuildBonemenu(); });
             _presetCategory = _mainCategory.CreatePage("Presets", Color.white);
 #if DEBUG

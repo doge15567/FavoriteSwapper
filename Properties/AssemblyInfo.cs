@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using FavoriteSwapper;
 using MelonLoader;
+using UnityEngine;
 
 [assembly: AssemblyDescription(FavoriteSwapper.Main.Description)]
 [assembly: AssemblyVersion(FavoriteSwapper.Main.Version)]
@@ -9,7 +10,7 @@ using MelonLoader;
 [assembly: AssemblyCopyright("Developed by " + FavoriteSwapper.Main.Author)]
 [assembly: AssemblyTrademark(FavoriteSwapper.Main.Company)]
 [assembly: MelonInfo(typeof(FavoriteSwapper.Main), FavoriteSwapper.Main.Name, FavoriteSwapper.Main.Version, FavoriteSwapper.Main.Author, FavoriteSwapper.Main.DownloadLink)]
-[assembly: MelonColor(255,255,255,255)]
+[assembly: MelonColor(255, 255, 222, 145)]
 
 // Create and Setup a MelonGame Attribute to mark a Melon as Universal or Compatible with specific Games.
 // If no MelonGame Attribute is found or any of the Values for any MelonGame Attribute on the Melon is null or empty it will be assumed the Melon is Universal.

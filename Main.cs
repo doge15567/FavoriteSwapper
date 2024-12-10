@@ -13,8 +13,8 @@ namespace FavoriteSwapper
         internal const string Description = "Hot swapper for spawn gun favorites";
         internal const string Author = "doge15567";
         internal const string Company = "";
-        internal const string Version = "0.0.0";
-        internal const string DownloadLink = "";
+        internal const string Version = "1.0.0";
+        internal const string DownloadLink = "https://thunderstore.io/c/bonelab/p/doge15567/FavoriteSwapper";
         internal static MelonLogger.Instance MelonLog;
 
         public static PresetManager _presetManager = new PresetManager();
